@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCurrenciesContext } from '../context/CurrencyContextProvider'
+import { useCurrenciesContext } from '../../context/CurrencyContextProvider'
 import './header.scss'
 
 const Header = () => {
@@ -23,8 +23,8 @@ const Header = () => {
       </div>
       <div className='act-curr'>
         {displayCurrencies.map((currency) => (
-          <div>
-            {currency.cc}: {currency.rate}
+          <div key={currency.r030}>
+            {currency.cc}: {currency.rate.toFixed(2)}
           </div>
         ))}
       </div>

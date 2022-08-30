@@ -1,0 +1,27 @@
+.currency-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    border-radius: 15px;
+    margin-top: 30px;
+    width:  250px;
+    height: 80px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.custom-select {
+    &__control{
+        width: 250px;
+        border-color: #000000 !important;
+        border-radius: 15px !important;
+        cursor: pointer !important;
+    }
+
+    &__indicator-separator {
+        display: none !important;
+    }
+}
